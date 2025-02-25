@@ -1,0 +1,109 @@
+/* Define color variables */
+:root {
+  --primary-color: #6a0dad;  /* Purple */
+  --secondary-color: #1e90ff;  /* Blue */
+  --accent-color: #ff4500;  /* Red */
+  --bg-color: #f5f5f5;  /* Light background */
+  --text-color: #333;
+}
+
+/* Reset some basic elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* Main container */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Card component */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
